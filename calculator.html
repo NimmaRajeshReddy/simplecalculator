@@ -1,0 +1,66 @@
+<!dOCTYPE html>
+<html>
+    <head>
+        <title>CALCULATOR</title>
+        <meta charset="utf-8">
+        <meta name="description" content="calculator">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            input
+            {
+                width: 100px; 
+                height: 100px;
+                font-size: 75px;
+                border-radius: 10px;
+                margin:10px;
+                background-color: #000;
+                color:#fff;
+                border-style: none;
+            }
+            #myform
+            {
+                margin-left: 500px;
+                margin-top: 0px;
+            }
+            h1
+            {
+                text-align: center;
+                font-size: 100px;
+                margin-right: 0px;
+                margin-top: 0px;
+                margin-bottom: -2px;
+                font-family: serif;
+            }
+            #txtarea
+            {
+                width: 465px;
+                height: 100px;
+                text-align: center;
+                background-color: #1f80c9;
+            }
+    </style>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <form id="myform" Name="calc">
+            <input name="d" id="txtarea"><br>
+            <input type="button" value="0" onclick="calc.d.value+=0">
+            <input type="button" value="1" onclick="calc.d.value+=1">
+            <input type="button" value="2" onclick="calc.d.value+=2">
+            <input type="button" value="+" style="background-color: #cc5c11;" onclick="calc.d.value+='+'" ><br>
+            <input type="button" value="3" onclick="calc.d.value+=3">
+            <input type="button" value="4" onclick="calc.d.value+=4">
+            <input type="button" value="5" onclick="calc.d.value+=5">
+            <input type="button" value="-" style="background-color: #ba55d3;" onclick="calc.d.value+='-'"><br>
+            <input type="button" value="6" onclick="calc.d.value+=6">
+            <input type="button" value="7" onclick="calc.d.value+=7">
+            <input type="button" value="8" onclick="calc.d.value+=8" onclick="calc.d.value+=8">
+            <input type="button" value="*" style="background-color: #7db1b2;" onclick="calc.d.value+='*'"><br>
+            <input type="button" value="9" onclick="calc.d.value+=2" onclick="calc.d.value+=9">
+            <input type="button" value="C" style="background-color: #cc0000;" onclick="calc.d.value=''">
+            <input type="button" value="=" Onclick="calc.d.value=eval(calc.d.value)">
+            <input type="button" value="/" style="background-color: green;" onclick="calc.d.value+='/'">
+        </form>
+
+    </body>
+</html>
